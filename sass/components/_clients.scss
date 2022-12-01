@@ -1,0 +1,32 @@
+.clients {
+  display: flex;
+  margin-right: -30px;
+
+  &__item {
+    flex-basis: calc(100% / 6 - 30px);
+    margin-right: 30px;
+  }
+
+  &__icon {
+    fill: currentColor;
+  }
+
+  &__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 170px;
+    height: 92px;
+    border: 1px solid #afb1b8;
+    border-radius: 4px;
+    color: #afb1b8;
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+      border: 1px solid var(--accent-color);
+      color: var(--accent-color);
+    }
+  }
+}
