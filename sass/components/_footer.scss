@@ -5,18 +5,42 @@
 
   &__container {
     display: flex;
-    align-items: baseline;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 60px;
+
+    @media screen and (min-width: 768px) {
+      align-items: baseline;
+      flex-direction: row;
+      justify-content: space-around;
+    }
+
+    @media screen and (min-width: 1200px) {
+      justify-content: start;
+      gap: 0;
+    }
   }
 
   &__left {
-    margin-right: 70px;
+    margin-right: 0;
+
+    @media screen and (min-width: 1200px) {
+      margin-right: 70px;
+    }
   }
 
   &__logo {
-    display: inline-block;
+    display: block;
+    text-align: center;
     padding: 0;
+    margin-right: 0;
     margin-bottom: 20px;
     color: var(--primary-white-color);
+
+    @media screen and (min-width: 1200px) {
+      display: inline-block;
+      text-align: left;
+    }
   }
 
   &__address {
@@ -28,10 +52,15 @@
   }
 
   &__center {
-    margin-right: auto;
+    margin-right: 0;
+
+    @media screen and (min-width: 1200px) {
+      margin-right: auto;
+    }
   }
 
   &__title {
+    text-align: center;
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
@@ -39,10 +68,15 @@
     text-transform: uppercase;
     color: var(--primary-white-color);
     margin-bottom: 20px;
+
+    @media screen and (min-width: 1200px) {
+      text-align: left;
+    }
   }
 
   &__socials {
     display: flex;
+    justify-content: center;
     gap: 10px;
   }
 
@@ -50,6 +84,8 @@
     fill: currentColor;
   }
   &__items {
+    display: block;
+    text-align: center;
     font-style: normal;
     font-size: 14px;
     line-height: 1.71;
@@ -60,6 +96,11 @@
     &:hover,
     &:focus {
       color: var(--accent-color);
+    }
+
+    @media screen and (min-width: 1200px) {
+      display: inline-block;
+      text-align: left;
     }
   }
 

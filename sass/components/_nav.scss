@@ -3,9 +3,19 @@
   align-items: center;
 
   &__list {
-    display: flex;
-    align-items: center;
-    gap: 50px;
+    display: none;
+
+    @media screen and (min-width: 768px) {
+      display: flex;
+      align-items: center;
+      gap: 50px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      display: flex;
+      align-items: center;
+      gap: 50px;
+    }
   }
 
   &__link {

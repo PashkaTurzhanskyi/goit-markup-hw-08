@@ -1,10 +1,20 @@
 .clients {
   display: flex;
+  flex-wrap: wrap;
   margin-right: -30px;
+  gap: 30px;
 
   &__item {
-    flex-basis: calc(100% / 6 - 30px);
-    margin-right: 30px;
+    flex-basis: calc(100% / 2 - 30px);
+    // margin-right: 30px;
+
+    @media screen and (min-width: 768px) {
+      flex-basis: calc(100% / 3 - 30px);
+    }
+
+    @media screen and (min-width: 1200px) {
+      flex-basis: calc(100% / 6 - 30px);
+    }
   }
 
   &__icon {
@@ -15,7 +25,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 170px;
+    width: 210px;
     height: 92px;
     border: 1px solid #afb1b8;
     border-radius: 4px;
@@ -27,6 +37,14 @@
     &:focus {
       border: 1px solid var(--accent-color);
       color: var(--accent-color);
+    }
+
+    @media screen and (min-width: 768px) {
+      width: 226px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      width: 170px;
     }
   }
 }

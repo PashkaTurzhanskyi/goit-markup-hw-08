@@ -1,8 +1,13 @@
 .footer__form {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 12px;
+
+  @media screen and (min-width: 1200px) {
+    flex-direction: row;
+  }
 }
 
 .footer__form input {
@@ -21,12 +26,16 @@
 }
 
 .footer__input {
-  width: 358px;
+  width: 450px;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   background-color: transparent;
+
+  @media screen and (min-width: 1200px) {
+    width: 358px;
+  }
 }
 
 .btn-send {

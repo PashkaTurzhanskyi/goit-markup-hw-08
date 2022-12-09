@@ -60,6 +60,15 @@
             >
           </li>
         </ul>
+        <button
+          class="menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg class="icon-menu" width="40" height="40">
+            <use href="./images/icons.svg#icon-menu"></use>
+          </svg>
+        </button>
       </div>
     </header>
     <main>
@@ -125,13 +134,18 @@
           </ul>
         </div>
       </section>
-      <section class="section">
+      <section class="activities">
         <div class="container">
-          <h2 class="section__title">Чим ми займаємося</h2>
-          <ul class="list activities">
+          <h2 class="activities__title">Чим ми займаємося</h2>
+          <ul class="list activities__list">
             <li class="activities__item">
+              <!-- descriptor X -->
               <img
-                src="./images/box-1.jpg"
+                srcset="
+                  ./images/activities/imgdesktop_l@1x.jpg 1x,
+                  ./images/activities/imgdesktop_l@2x.jpg 2x
+                "
+                src="./images/activities/imgdesktop_l@1x.jpg"
                 alt="Працюємо з комп'ютером"
                 width="370"
               />
@@ -141,7 +155,11 @@
             </li>
             <li class="activities__item">
               <img
-                src="./images/box-2.jpg"
+                srcset="
+                  ./images/activities/imgmobile_l@1x.jpg 1x,
+                  ./images/activities/imgmobile_l@2x.jpg 2x
+                "
+                src="./images/activities/imgmobile_l@1x.jpg"
                 alt="Працюємо з телефоном"
                 width="370"
               />
@@ -151,7 +169,11 @@
             </li>
             <li class="activities__item">
               <img
-                src="./images/box-3.jpg"
+                srcset="
+                  ./images/activities/imgdesign_l@1x.jpg 1x,
+                  ./images/activities/imgdesign_l@2x.jpg 2x
+                "
+                src="./images/activities/imgdesign_l@1x.jpg"
                 alt="Працюємо з планшетом"
                 width="370"
               />
@@ -167,7 +189,22 @@
           <h2 class="section__title">Наша команда</h2>
           <ul class="list team__list">
             <li class="team__item">
-              <img src="./images/igor.jpg" alt="Ігор" width="270" />
+              <!-- descriptor W -->
+              <img
+                srcset="
+                  ./images/team/imgigor_270.jpg 270w,
+                  ./images/team/imgigor_354.jpg 354w,
+                  ./images/team/imgigor_450.jpg 450w,
+                  ./images/team/imgigor_540.jpg 540w,
+                  ./images/team/imgigor_708.jpg 708w,
+                  ./images/team/imgigor_900.jpg 900w
+                "
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                src="./images/team/imgigor_450.jpg"
+                alt="Ігор"
+                loading="lazy"
+                width="450"
+              />
               <div class="team__description">
                 <h3 class="team__member">Ігор Дем'яненко</h3>
                 <p lang="en" class="team__position">Product Designer</p>
@@ -224,7 +261,21 @@
               </div>
             </li>
             <li class="team__item">
-              <img src="./images/olga.jpg" alt="Ольга" width="270" />
+              <img
+                srcset="
+                  ./images/team/imgolga_270.jpg 270w,
+                  ./images/team/imgolga_354.jpg 354w,
+                  ./images/team/imgolga_450.jpg 450w,
+                  ./images/team/imgolga_540.jpg 540w,
+                  ./images/team/imgolga_708.jpg 708w,
+                  ./images/team/imgolga_900.jpg 900w
+                "
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                src="./images/team/imgolga_450.jpg"
+                alt="Ольга"
+                loading="lazy"
+                width="450"
+              />
               <div class="team__description">
                 <h3 class="team__member">Ольга Рєпіна</h3>
                 <p lang="en" class="team__position">Frontend Developer</p>
@@ -281,7 +332,21 @@
               </div>
             </li>
             <li class="team__item">
-              <img src="./images/mykola.jpg" alt="Микола" width="270" />
+              <img
+                srcset="
+                  ./images/team/imgmykola_270.jpg 270w,
+                  ./images/team/imgmykola_354.jpg 354w,
+                  ./images/team/imgmykola_450.jpg 450w,
+                  ./images/team/imgmykola_540.jpg 540w,
+                  ./images/team/imgmykola_708.jpg 708w,
+                  ./images/team/imgmykola_900.jpg 900w
+                "
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                src="./images/team/imgmykola_450.jpg"
+                alt="Микола"
+                loading="lazy"
+                width="450"
+              />
               <div class="team__description">
                 <h3 class="team__member">Микола Тарасов</h3>
                 <p lang="en" class="team__position">Marketing</p>
@@ -338,7 +403,21 @@
               </div>
             </li>
             <li class="team__item">
-              <img src="./images/mikhailo.jpg" alt="Михайло" width="270" />
+              <img
+                srcset="
+                  ./images/team/imgmikhailo_270.jpg 270w,
+                  ./images/team/imgmikhailo_354.jpg 354w,
+                  ./images/team/imgmikhailo_450.jpg 450w,
+                  ./images/team/imgmikhailo_540.jpg 540w,
+                  ./images/team/imgmikhailo_708.jpg 708w,
+                  ./images/team/imgmikhailo_900.jpg 900w
+                "
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                src="./images/team/imgmikhailo_450.jpg"
+                alt="Михайло"
+                loading="lazy"
+                width="450"
+              />
               <div class="team__description">
                 <h3 class="team__member">Михайло Єрмаков</h3>
                 <p lang="en" class="team__position">UI Designer</p>
@@ -616,6 +695,58 @@
         </button>
       </div>
     </div>
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
+        <svg class="icon-close-menu" width="40" height="40">
+          <use href="./images/icons.svg#icon-close-menu"></use>
+        </svg>
+      </button>
+
+      <ul class="mobile-menu">
+        <li class="mobile-menu__item">
+          <a href="" class="mobile-menu__link link current">Студія</a>
+        </li>
+        <li class="mobile-menu__item">
+          <a href="" class="mobile-menu__link link">Портфоліо</a>
+        </li>
+        <li class="mobile-menu__item">
+          <a href="" class="mobile-menu__link link">Контакти</a>
+        </li>
+      </ul>
+      <ul class="mobile-contacts list">
+        <li class="mobile-contacts__item">
+          <a href="" class="mobile-contacts__link-phone link"
+            >+38 096 111 11 11</a
+          >
+        </li>
+        <li class="mobile-contacts__item">
+          <a href="" class="mobile-contacts__link-mail link"
+            >info@devstudio.com</a
+          >
+        </li>
+      </ul>
+      <ul class="mobile-socials list">
+        <li class="mobile-socials__item">
+          <a href="" class="mobile-socials__link link">Instagram</a>
+        </li>
+        <li class="mobile-socials__item">
+          <a href="" class="mobile-socials__link link">Twitter</a>
+        </li>
+        <li class="mobile-socials__item">
+          <a href="" class="mobile-socials__link link">Facebook</a>
+        </li>
+        <li class="mobile-socials__item">
+          <a href="" class="mobile-socials__link link">LinkedIn</a>
+        </li>
+      </ul>
+    </div>
     <script src="./js/modal.js"></script>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="./js/mobile-menu.js"></script>
   </body>
 </html>

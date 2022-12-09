@@ -6,9 +6,22 @@
   }
 
   &__group {
-    display: flex;
-    margin-left: auto;
-    gap: 50px;
+    display: none;
+
+    @media screen and (min-width: 768px) {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin-left: auto;
+      gap: 10px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      display: flex;
+      flex-direction: row;
+      margin-left: auto;
+      gap: 50px;
+    }
   }
 
   &__icon {
@@ -19,8 +32,8 @@
   &__contact {
     display: inline-flex;
     align-items: center;
-    padding-top: 32px;
-    padding-bottom: 32px;
+    padding-top: 0;
+    padding-bottom: 0;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -31,6 +44,11 @@
     &:hover,
     &:focus {
       color: var(--accent-color);
+    }
+
+    @media screen and (min-width: 1200px) {
+      padding-top: 32px;
+      padding-bottom: 32px;
     }
   }
 }
