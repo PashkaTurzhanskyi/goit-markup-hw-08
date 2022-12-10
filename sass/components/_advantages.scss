@@ -7,11 +7,15 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 450px;
+    width: 290px;
     height: 120px;
     background-color: var(--secondary-background-color);
     border-radius: 4px;
     margin-bottom: 30px;
+
+    @media screen and (min-width: 480px) {
+      width: 450px;
+    }
 
     @media screen and (min-width: 768px) {
       width: 354px;
@@ -24,12 +28,17 @@
 
   &__list {
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
     gap: 30px;
   }
 
   &__item {
-    flex-basis: 450px;
+    flex-basis: 290px;
+
+    @media screen and (min-width: 480px) {
+      flex-basis: 450px;
+    }
 
     @media screen and (min-width: 768px) {
       flex-basis: 354px;
