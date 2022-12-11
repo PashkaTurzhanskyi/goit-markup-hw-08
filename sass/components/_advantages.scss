@@ -7,22 +7,26 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 290px;
+    // width: 290px;
+    flex-basis: 100%;
     height: 120px;
     background-color: var(--secondary-background-color);
     border-radius: 4px;
     margin-bottom: 30px;
 
     @media screen and (min-width: 480px) {
-      width: 450px;
+      // width: 450px;
+      flex-basis: 450px;
     }
 
     @media screen and (min-width: 768px) {
-      width: 354px;
+      // width: 354px;
+      flex-basis: 354px;
     }
 
     @media screen and (min-width: 1200px) {
-      width: 270px;
+      // width: 270px;
+      flex-basis: 270px;
     }
   }
 
@@ -34,7 +38,7 @@
   }
 
   &__item {
-    flex-basis: 290px;
+    flex-basis: 100%;
 
     @media screen and (min-width: 480px) {
       flex-basis: 450px;
